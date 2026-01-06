@@ -5,12 +5,15 @@ export default defineConfig({
   title: "Mobile ID",
   base: '/mobileid_vitepress/',
   description: "Technical documenetion for Mobile ID integration",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/mobileid.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Reference Guide', link: '/markdown-examples' },
       { text: 'Integration', link: '/markdown-examples' },
+      { text: 'API', link: '/markdown-examples' },
       { text: 'Support', link: '/markdown-examples' }
     ],
 
@@ -32,6 +35,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MobileID-Strong-Authentication/' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    }
   }
 })
